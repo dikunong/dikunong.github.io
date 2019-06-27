@@ -1,2 +1,2 @@
-# dikunong.github.io
-Personal website and portfolio at https://www.dikunong.nz
+# Personal Website
+Personal website and portfolio at https://dikunong.nz
