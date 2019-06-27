@@ -8,6 +8,27 @@ body {
   background-color: #FFF;
 }
 
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 16px;
+}
+
+.nav--link {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #222;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.nav--link:hover {
+  background: rgba(158, 158, 158, 0.20);
+}
+
 .container {
   max-width: 880px;
   margin: 60px auto 120px;
@@ -124,9 +145,12 @@ li {
 }
 
 a {
-  /* font-weight: 700; */
   text-decoration: none;
   color: #1E88E5;
+}
+
+h4 > a {
+  color: #222;    /* ugly way of decolouring headings that have nav #links to them */
 }
 
 /*------------------------------------*\
@@ -144,6 +168,8 @@ a {
 }
 
 @media only screen and (max-width: 610px) {
+  .nav--link { display: none; }
+
   h1 { font-size: 6.4rem; }
   h3 { font-size: 2.4rem; }
   h4 { font-size: 2.6rem; }
