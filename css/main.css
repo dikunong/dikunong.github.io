@@ -8,40 +8,12 @@ body {
   background-color: #FFF;
 }
 
-/*------------------------------------*\
-    #TEMPORARY-REVUE-PROMO
-\*------------------------------------*/
-
-.banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #1E88E5;
-  width: 100%;
-  z-index: 1;
-}
-
-.banner--content {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 8px;
-  text-align: center;
-  color: #FFF;
-}
-
-.banner--content > a {
-  color: #FFF;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
 nav {
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
   margin: 16px;
-  padding-top: 32px;
 }
 
 .nav--link {
