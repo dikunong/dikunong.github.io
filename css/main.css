@@ -14,7 +14,7 @@ body {
 }
 
 .section-title-container {
-  margin-bottom: 48px;
+  margin: 48px 0;
   text-align: center;
 }
 
@@ -121,10 +121,6 @@ a {
     #PROJECTS
 \*------------------------------------*/
 
-.section-projects {
-  margin-top: 48px;
-}
-
 .project-grid {
   column-gap: 4rem;
   display: grid;
@@ -155,4 +151,12 @@ a {
 .project-link {
 	font-size: 1.5rem;
   line-height: 1.5;
+}
+
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+
+.section-cv {
+  margin-bottom: 120px;
 }
