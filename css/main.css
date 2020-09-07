@@ -1,5 +1,6 @@
 html {
   font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
   transition: all 0.3s;
 }
 
@@ -10,6 +11,11 @@ body {
 .container {
   max-width: 880px;
   margin: 0 auto;
+}
+
+.section-title-container {
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 /*------------------------------------*\
@@ -45,8 +51,10 @@ p {
 }
 
 a {
+  color: #1a73e8;
+  font-weight: bold;
+  line-height: 0;
 	text-decoration: none;
-	line-height: 0;
 	transition: all 0.15s;
 }
 
@@ -106,7 +114,45 @@ a {
 }
 
 .about-contact > a {
-  text-decoration: none;
 	color: #8bb3f8;
-	line-height: 0;
+}
+
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+
+.section-projects {
+  margin-top: 48px;
+}
+
+.project-grid {
+  column-gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5rem;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-name {
+  line-height: 1.3;
+  margin-top: 4px;
+}
+
+.project-desc {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+.project-link-container {
+  margin-bottom: 8px;
+}
+
+.project-link {
+	font-size: 1.5rem;
+  line-height: 1.5;
 }
