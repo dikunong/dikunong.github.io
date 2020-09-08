@@ -6,176 +6,166 @@
     <title>Di Kun Ong</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/sanitize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <nav>
-      <a class="nav--link" href="#about">About</a>
-      <a class="nav--link" href="#projects">Projects</a>
-      <a class="nav--link" href="#cv">CV</a>
-      <a class="nav--link" href="#contact">Contact</a>
-    </nav>
 
-    <div class="container">
-      <header>
-        <h1>Di Kun Ong</h1>
-        <h3>3rd Year Software Engineering Student</h3>
-        <hr />
-      </header>
-
-      <main>
-        <section>
-          <h5><i>Welcome to my personal website!</i></h5>
+    <section class="section-about">
+      <div class="container about-profile-grid">
+        <div class="about-profile-headshot">
+          <img src="img/headshot-2020.jpg" alt="Headshot of Di Kun Ong">
+        </div>
+        <div>
+          <h1>Di Kun Ong</h1>
+        </div>
+        <div class="about-profile-tagline">
           <p>
-            This website is under continued development. Soon, you'll be able to
-            look at even more cool things, like:
+            Hi! I'm an NZ-based penultimate year Software Engineering student by day,
+            wannabe theatre lighting designer by the-rest-of-the-time.
           </p>
-          <ul>
-            <li>Shows I've designed theatrical lighting for</li>
-            <li>Things I've written that are supposed to be funny</li>
-          </ul>
-          <p>
-            Come back soon to see this place in its continually developing form!
+        </div>
+      </div>
+      <div class="container about-internship">
+        <p>
+          I'm looking for an internship at the moment!
+          Please check out my projects and full CV below, then feel free to get in touch in one of these ways:
+        </p>
+      </div>
+      <div class="container about-contact">
+        <a href="mailto:me@dikunong.nz" target="_blank" rel="noopener noreferrer">Email</a>
+         / 
+        <a href="https://www.linkedin.com/in/dikun-ong/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+         / 
+        <a href="https://github.com/dikunong" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+    </section>
+
+    <!-- <nav class="section-nav"></nav> -->
+
+    <section class="container container-wide section-projects">
+      <div class="section-title-container">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="project-grid">
+        <div>
+          <img src="img/project-varpedia.png" alt="VARpedia user interface" class="project-image">
+          <h3 class="project-name">VARpedia</h3>
+          <p class="project-desc">
+            <b>Java</b>
+            object-oriented application that helps users learn
+            about new terms in the English language using visual, aural, and
+            reading methods. Utilises JavaFX to deliver a customisable
+            design optimised for second-language learners.
+            The code received a <b>95% mark</b> in SOFTENG 206.
           </p>
-        </section>
-
-        <section>
-          <h4><a name="about">About me</a></h4>
-          <p>
-            I'm a Software Engineering student in my 3rd year of studies at the
-            University of Auckland. I've been working with technology since my
-            childhood, but who hasn't these days? Having grown my technical
-            skills over the past couple of years and gaining some experience in
-            the industry, I'm now seeking internship opportunities in New
-            Zealand and overseas. I'm always working hard everyday to learn new
-            skills and try new things, and would love to apply my drive and
-            dedication in the workplace.
-          </p>
-          <p>
-            In my spare time I like to light, write, and break the rule of
-            threes by not giving a third word that rhymes. More specifically,
-            I've done theatrical lighting design for the Auckland Engineering
-            Revue and my high school; I also write various things when the
-            opportunity arises, usually with the intent of making people laugh.
-            Last year I was the University of Auckland Engineering Part II
-            Student Blogger, posting regularly about life as a Part II Software
-            student!
-          </p>
-          <p>
-            You can find links to examples of all this stuff below, except the
-            Part II Blog - which you can visit
-            <a
-              href="https://student-editorials.blogs.auckland.ac.nz/author/dngo711/"
-              >here</a
-            >.
-          </p>
-        </section>
-
-        <section>
-          <h4><a name="projects">Projects</a></h4>
-          <div class="projects">
-            <div class="projects--image">
-              <img src="img/project-varpedia.png" />
-            </div>
-            <div class="projects--text">
-              <h5>VARpedia</h5>
-              <p>
-                <b>Java</b> object-oriented application that helps users learn
-                about new terms in the English language using visual, aural, and
-                reading methods. Utilises JavaFX to deliver a customisable
-                design optimised for second-language learners.
-              </p>
-              <a href="https://github.com/dikunong/VARpedia"
-                ><b>View on GitHub</b></a
-              >
-            </div>
-
-            <div class="projects--image">
-              <img src="img/project-engrevue.png" />
-            </div>
-            <div class="projects--text">
-              <h5>engrevue.co.nz</h5>
-              <p>
-                <b>React/Gatsby</b> responsive website that promotes the UoA
-                Engineering Revue, receiving thousands of visits.
-              </p>
-              <a href="https://engrevue.co.nz"><b>View at engrevue.co.nz</b></a>
-              <br /><br />
-              <a href="https://github.com/UoAEngineeringRevue/engrevue-website"
-                ><b>View on GitHub</b></a
-              >
-            </div>
-
-            <div class="projects--image">
-              <img src="img/project-kcolour.jpg" />
-            </div>
-            <div class="projects--text">
-              <h5>K-Colour Image Converter</h5>
-              <p>
-                <b>MATLAB</b> script that implements the K-means algorithm to
-                convert a full-colour JPEG image of any size into one that uses
-                only k number of colours. I implemented matrix vectorisation
-                concepts to maximise performance to hundreds of times faster vs
-                conventional for loops.
-              </p>
-              <a href="https://github.com/dikunong/k-colour-image-converter"
-                ><b>View on GitHub</b></a
-              >
-            </div>
-
-            <div class="projects--image">
-              <img src="img/project-shiftman.png" />
-            </div>
-            <div class="projects--text">
-              <h5>Shift Manager</h5>
-              <p>
-                <b>Java</b> program that uses a client-server model to allow
-                users to manage an employment roster.
-              </p>
-              <a href="https://github.com/dikunong/shift-manager"
-                ><b>View on GitHub</b></a
-              >
-            </div>
-
-            <div class="projects--image">
-              <img src="img/project-personal.png" />
-            </div>
-            <div class="projects--text">
-              <h5>dikunong.nz</h5>
-              <p>
-                <b>HTML/CSS/JavaScript</b> responsive website that showcases my
-                online profile and portfolio. You happen to be looking at it
-                right now!
-              </p>
-              <a href="https://github.com/dikunong/dikunong.github.io"
-                ><b>View on GitHub</b></a
-              >
-            </div>
+          <div class="project-link-container">
+            <a href="https://github.com/dikunong/VARpedia" class="project-link" target="_blank" rel="noopener noreferrer">Source code</a>
           </div>
-        </section>
+        </div>
 
-        <section>
-          <h4><a name="cv">My CV</a></h4>
-          <p>
-            You can download my current CV, last updated March 10 2020, here:
-            <a href="img/Di Kun Ong - CV.pdf">Di Kun Ong - CV</a>
+        <div>
+          <img src="img/project-engrevue.png" alt="engrevue.co.nz landing page" class="project-image">
+          <h3 class="project-name">engrevue.co.nz</h3>
+          <p class="project-desc">
+            <b>React/Gatsby</b>
+            responsive landing page website that promotes the UoA
+            Engineering Revue, averaging <b>over 1000 unique visitors a month</b>.
+            I built the index page, which acts as the gateway for ticket sales
+            for the annual comedy variety show.
           </p>
-        </section>
+          <div class="project-link-container">
+            <a href="https://engrevue.co.nz/" class="project-link" target="_blank" rel="noopener noreferrer">Live website</a>
+          </div>
+          <div class="project-link-container">
+            <a href="https://github.com/UoAEngineeringRevue/engrevue-website" class="project-link" target="_blank" rel="noopener noreferrer">Source code</a>
+          </div>
+        </div>
 
-        <section>
-          <h4><a name="contact">Get in touch</a></h4>
-          <p>If you want to talk to me, there are lots of ways to do so:</p>
-          <ul>
-            <li>Email: <a href="mailto:me@dikunong.nz">me@dikunong.nz</a></li>
-            <li>
-              LinkedIn:
-              <a href="https://www.linkedin.com/in/dikun-ong/">/in/dikun-ong</a>
-            </li>
-            <li>GitHub: <a href="https://github.com/dikunong">dikunong</a></li>
-          </ul>
-        </section>
-      </main>
-    </div>
+        <div>
+          <img src="img/project-sloshed.png" alt="slosh.lol webapp" class="project-image" loading="lazy">
+          <h3 class="project-name">Sloshed</h3>
+          <p class="project-desc">
+            <b>Vanilla HTML/CSS/JS</b>
+            webapp built for the 2020 Summer of Tech Create Camp that utilises
+            responsibility features in the search for a bar on a night out.
+            I led the front-end development as part of a team of six,
+            winning the <b>hackathon's award for Best Design</b>.
+          </p>
+          <div class="project-link-container">
+            <a href="https://slosh.lol/" class="project-link" target="_blank" rel="noopener noreferrer">Demo site</a>
+          </div>
+          <div class="project-link-container">
+            <a href="https://github.com/Alxjlv/Sloshed" class="project-link" target="_blank" rel="noopener noreferrer">Source code</a>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/project-unishare.png" alt="UniShare hi-fi prototype" class="project-image" loading="lazy">
+          <h3 class="project-name">UniShare</h3>
+          <p class="project-desc">
+            <b>Vanilla HTML/CSS/JS</b>
+            hi-fi prototype that explores a design of a cloud file-sharing service
+            to aid university student group coursework.
+            I built a CSS framework of components from scratch in less than a week,
+            receiving an <b>87% mark</b> in SOFTENG 350.
+          </p>
+          <div class="project-link-container">
+            <a href="https://alexverkerk.com/se350-A3/src/" class="project-link" target="_blank" rel="noopener noreferrer">Demo site</a>
+          </div>
+          <div class="project-link-container">
+            <a href="https://github.com/Alxjlv/se350-A3" class="project-link" target="_blank" rel="noopener noreferrer">Source code</a>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/project-personal.png" alt="dikunong.nz website" class="project-image" loading="lazy">
+          <h3 class="project-name">dikunong.nz</h3>
+          <p class="project-desc">
+            <b>Vanilla HTML/CSS</b>
+            responsive website that showcases my
+            online profile and portfolio.
+            Utilises CSS Grid to be fully responsive and loads
+            at blazing fast speeds on any internet connection.
+            You happen to be looking at it
+            right now!
+          </p>
+          <div class="project-link-container">
+            <a href="https://github.com/dikunong/VARpedia" class="project-link" target="_blank" rel="noopener noreferrer">Source code</a>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/project-kcolour.jpg" alt="K-Colour example output image" class="project-image" loading="lazy">
+          <h3 class="project-name">K-Colour Image Converter</h3>
+          <p class="project-desc">
+            <b>MATLAB</b>
+            script that implements the K-means algorithm to
+            convert a full-colour JPEG image into one that uses
+            only k number of colours. I implemented matrix vectorisation
+            to increase performance by a factor of hundreds,
+            receiving a <b>100% mark</b> in ENGGEN 131.
+          </p>
+          <div class="project-link-container">
+            <a href="https://github.com/dikunong/k-colour-image-converter" class="project-link" target="_blank" rel="noopener noreferrer">Source code</a>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+    <section class="container section-cv">
+      <div class="section-title-container">
+        <h1>My CV</h1>
+      </div>
+      <p>
+        You can download my CV, last updated 5th August 2020, here:
+        <a href="img/Di Kun Ong - CV.pdf">Di Kun Ong - CV</a>
+      </p>
+    </section>
+    
   </body>
 </html>

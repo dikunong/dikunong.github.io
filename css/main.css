@@ -1,185 +1,302 @@
 html {
-  font-size: 62.5%;
+  font-family: "DM Sans", Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  transition: all 0.3s;
 }
 
 body {
-  font: 1.6rem Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #222;
-  background-color: #FFF;
-}
-
-nav {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 16px;
-}
-
-.nav--link {
-  font-size: 1.4rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #222;
-  padding: 12px;
-  border-radius: 4px;
-}
-
-.nav--link:hover {
-  background: rgba(158, 158, 158, 0.20);
+  margin: 0;
 }
 
 .container {
-  max-width: 880px;
-  margin: 60px auto 120px;
+  max-width: 976px;
+  margin: 0 auto;
+  padding: 0 48px;
 }
 
-/*------------------------------------*\
-    #INDEX
-\*------------------------------------*/
+.container-wide {
+  max-width: 1350px;
+}
 
-header {
-  display: block;
+.section-title-container {
+  margin: 48px 0;
   text-align: center;
-  margin: 24px;
-}
-
-hr {
-  background-color: #E0E0E0;
-  border: none;
-  display: block;
-  height: 2px;
-}
-
-main {
-  display: block;
-  margin: auto;
-}
-
-section {
-  display: block;
-  margin: 24px;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(min-content, max-content);
-  column-gap: 12px;
-  row-gap: 24px;
-}
-
-.projects--image > img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-  border-radius: 6px;
-}
-
-.projects--text > h5 {
-  margin-top: 0px;
-}
-
-.projects--text > p {
-  margin-bottom: 12px;
 }
 
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
 
-h1 {    
-  font-size: 9.6rem;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin: 24px 0;
+h1 {
+	font-size: 6rem;
+	line-height: 1.25;
+	margin: 0;
+	font-weight: 400;
+  letter-spacing: -2px;
+  transition: all 0.15s;
 }
 
 h2 {
-  font-size: 6rem;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin: 24px 0;
+	font-size: 4rem;
+	font-weight: 500;
+	letter-spacing: -1px;
+	margin: 0;
+  line-height: 1.35;
+  transition: all 0.15s;
 }
 
 h3 {
-  font-size: 4.8rem;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  margin: 24px 0;
-}
-
-h4 {
-  font-size: 3.4rem;
-  font-weight: 500;
-  line-height: 40px;
-  margin: 12px 0;
-}
-
-h5 {
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.005em;
-  margin: 12px 0;
-}
-
-h6 {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  margin: 12px 0;
+	font-size: 2.5rem;
+	margin: 0;
+  line-height: 1.5;
+  transition: all 0.15s;
 }
 
 p {
-  margin: 4px 0;
+	margin: 0;
+	font-size: 1.3rem;
   line-height: 1.4;
-}
-
-li {
-  margin: 4px 0;
+  transition: all 0.15s;
 }
 
 a {
-  text-decoration: none;
-  color: #1E88E5;
+  color: #1a73e8;
+  font-weight: bold;
+  line-height: 0;
+	text-decoration: none;
+	transition: all 0.15s;
 }
 
-h4 > a {
-  color: #222;    /* ugly way of decolouring headings that have nav #links to them */
+/*------------------------------------*\
+    #ABOUT
+\*------------------------------------*/
+
+.section-about {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/about-banner.jpg);
+    /* background-attachment: fixed; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 500px;
+}
+
+.about-profile-grid {
+  column-gap: 3rem;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 120px 130px;
+  padding-top: 48px;
+}
+
+.about-profile-headshot {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.about-profile-headshot > img {
+  border-radius: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.about-profile-tagline > p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.about-internship {
+  font-style: italic;
+  padding-top: 36px;
+}
+
+.about-internship > p {
+  line-height: 1.3;
+}
+
+.about-contact {
+  font-size: 2rem;
+  padding-top: 24px;
+}
+
+.about-contact > a {
+	color: #8bb3f8;
+}
+
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+
+.project-grid {
+  column-gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-name {
+  line-height: 1.3;
+  margin-top: 4px;
+}
+
+.project-desc {
+  margin: 12px 0;
+}
+
+.project-link-container {
+  margin-bottom: 8px;
+}
+
+.project-link {
+	font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/*------------------------------------*\
+    #CV
+\*------------------------------------*/
+
+.section-cv {
+  margin-bottom: 120px;
 }
 
 /*------------------------------------*\
     #BREAKPOINTS
 \*------------------------------------*/
 
-@media only screen and (max-width: 880px) {
-  h1 { font-size: 8rem; }
-  h3 { font-size: 4rem; }
+@media only screen and (max-width: 1349px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
 }
 
-@media only screen and (max-width: 745px) {
-  h3 { font-size: 3.2rem; }
-  h4 { font-size: 3rem; }
+@media only screen and (max-width: 865px) {
+
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  .about-profile-grid {
+    column-gap: 2.7rem;
+  }
+
 }
 
-@media only screen and (max-width: 610px) {
-  .nav--link { display: none; }
+@media only screen and (max-width: 768px) {
 
-  h1 { font-size: 6.4rem; }
-  h3 { font-size: 2.4rem; }
-  h4 { font-size: 2.6rem; }
-  h5 { font-size: 2.1rem; }
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
-  .projects { display: block; }
-  .projects--text { margin: 12px 0 24px; }
+  .about-profile-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto;
+    text-align: center;
+  }
+
+  .section-about {
+    min-height: 640px;
+    height: 85vh;
+    max-height: 700px;
+  }
+
+  .about-profile-headshot {
+    display: flex;
+    grid-row: 1;
+    justify-content: center;
+  }
+
+  .about-profile-headshot > img {
+    max-height: 150px;
+    max-width: 100%;
+  }
+
+  .about-internship {
+    padding-top: 12px;
+  }
+
+  .about-contact {
+    padding-top: 18px;
+    text-align: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
 }
 
-@media only screen and (max-width: 370px) {
-  h1 { font-size: 4.8rem; }
-  h5 { font-size: 1.8rem; }
+
+@media only screen and (max-width: 430px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+
+  .section-about {
+    min-height: 600px;
+  }
+
+  .about-profile-grid {
+    padding-top: 24px;
+  }
+
+  .about-profile-tagline > p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .about-contact {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media only screen and (max-width: 355px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .section-about {
+    min-height: 530px;
+  }
+
+  .about-profile-tagline > p {
+    font-size: 1.1rem;
+  }
+
+  .about-contact {
+    font-size: 1.4rem;
+  }
+
 }
